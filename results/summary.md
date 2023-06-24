@@ -21,4 +21,4 @@ The net monthly income (total income - total expenses) is:
 
 - **Net Monthly Income**: $-7879.17
 
-Please note that a negative net monthly income indicates that the total expenses exceed the total income.
+Note: A negative net monthly income indicates that the total expenses exceed the total income.
