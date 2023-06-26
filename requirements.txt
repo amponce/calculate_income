@@ -1,3 +1,2 @@
 pandas
-pdfplumber
-pdfrw
+PyPDF2
