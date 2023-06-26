@@ -7,7 +7,7 @@
       "command": "python main.py",
       "runAtStart": true,
       "restartOn": {
-        "files": ["calculate_submission.py"]
+        "files": ["submission-object.json"]
       }
     },
     "install-dependencies": {
