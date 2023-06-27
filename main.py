@@ -52,6 +52,7 @@ discretionary_income = total_income - total_expenses
 discretionary_income_expected = float(data['discretionaryIncome']['netMonthlyIncomeLessExpenses'])
 if discretionary_income != discretionary_income_expected:
     print(f"Discretionary income is incorrect. Expected: {discretionary_income_expected:.2f}, Actual: {discretionary_income:.2f}")
+    
     with open('./results/summary.md', 'w') as file:
         file.write(f"Discretionary income is incorrect. Expected: {discretionary_income_expected:.2f}, Actual: {discretionary_income:.2f}\n\n")
 else:
