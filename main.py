@@ -9,37 +9,47 @@ RESULTS_PATH = './results/summary.md'
 PDF_PATH = "./data/generated-pdf.pdf"
 ERROR_MSG = "An error occurred while processing {} data: {}"
 
+
 def load_json_data(path):
     with open(path) as file:
         return json.load(file)
 
-def process_data(data, key):
+
+def process_data(data, key, allow_negative=False):
     try:
         value = float(data.get(key, 0))
-        if value < 0:
+        if not allow_negative and value < 0:
             raise ValueError(f"{key.capitalize()} cannot be negative.")
         return value
     except ValueError as e:
         print(ERROR_MSG.format(key, e))
         sys.exit(1)
 
+
 def process_income(data):
-    vet_income = process_data(next(item for item in data["income"] if item["veteranOrSpouse"].lower() == "veteran"), "totalMonthlyNetIncome")
-    spouse_income = process_data(next(item for item in data["income"] if item["veteranOrSpouse"].lower() == "spouse"), "totalMonthlyNetIncome")
+    vet_income = process_data(next(item for item in data["income"] if item["veteranOrSpouse"].lower(
+    ) == "veteran"), "totalMonthlyNetIncome")
+    spouse_income = process_data(next(
+        item for item in data["income"] if item["veteranOrSpouse"].lower() == "spouse"), "totalMonthlyNetIncome")
     return vet_income, spouse_income
+
 
 def extract_pdf_text(path):
     with open(path, "rb") as file:
         pdf_reader = PyPDF2.PdfReader(file)
         return "".join(page.extract_text() for page in pdf_reader.pages)
 
+
 def process_pdf_data(text):
-    match = re.search(r"Amount that can be paid toward debt: \$(\d+\.\d+)", text)
+    match = re.search(
+        r"Amount that can be paid toward debt: \$(\d+\.\d+)", text)
     return float(match.group(1)) if match else None
+
 
 def write_to_file(path, content):
     with open(path, 'a') as file:
         file.write(content)
+
 
 def main():
     data = load_json_data(DATA_PATH)
@@ -48,7 +58,8 @@ def main():
     total_income = vet_income + spouse_income
     total_expenses = process_data(data["expenses"], "totalMonthlyExpenses")
     discretionary_income = total_income - total_expenses
-    discretionary_income_expected = process_data(data['discretionaryIncome'], 'netMonthlyIncomeLessExpenses')
+    discretionary_income_expected = process_data(
+        data['discretionaryIncome'], 'netMonthlyIncomeLessExpenses', True)
 
     income_check = f"Discretionary income is incorrect. Expected: {discretionary_income_expected:.2f}, Actual: {discretionary_income:.2f}\n\n" \
         if discretionary_income != discretionary_income_expected else "All calculations are correct.\n\n"
@@ -67,7 +78,7 @@ def main():
     Total Monthly Expenses: ${total_expenses:.2f}\n\n
     Discretionary Income: ${discretionary_income:.2f}\n\n
     Expected Amount that can be paid toward debt: {expected_amount:.2f} or negative\n\n
-    Actual Amount that can be paid toward debt: ${actual_amount:.2f} if not None else "None"\n\n"""
+    Actual Amount that can be paid toward debt: ${'None' if actual_amount is None else format(actual_amount, '.2f')}\n\n"""
     write_to_file(RESULTS_PATH, calculations)
 
     markdown_text = f"""# Financial Summary
@@ -114,8 +125,9 @@ def main():
 
     # Output the results to the console
     print(markdown_text)
-    
+
     print("All tests passed.")
+
 
 if __name__ == "__main__":
     main()
