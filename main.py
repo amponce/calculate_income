@@ -56,29 +56,44 @@ def main():
 
     vet_income, spouse_income = process_income(data)
     total_income = vet_income + spouse_income
+
     total_expenses = process_data(data["expenses"], "totalMonthlyExpenses")
     discretionary_income = total_income - total_expenses
+
     discretionary_income_expected = process_data(
         data['discretionaryIncome'], 'netMonthlyIncomeLessExpenses', True)
 
     income_check = f"Discretionary income is incorrect. Expected: {discretionary_income_expected:.2f}, Actual: {discretionary_income:.2f}\n\n" \
-        if discretionary_income != discretionary_income_expected else "All calculations are correct.\n\n"
+        if discretionary_income != discretionary_income_expected else "Discretionary income matches the expected results.\n\n"
     write_to_file(RESULTS_PATH, income_check)
 
-    expected_amount = discretionary_income if discretionary_income < 0 else 0
-    pdf_text = extract_pdf_text(PDF_PATH)
-    actual_amount = process_pdf_data(pdf_text)
+    amount_can_be_paid = process_data(
+        data["discretionaryIncome"], "amountCanBePaidTowardDebt")
 
-    debt_check = f"Amount that can be paid toward debt is incorrect. Expected: {expected_amount:.2f}, Actual: {actual_amount:.2f}\n\n" \
-        if actual_amount and actual_amount != expected_amount else "All calculations are correct.\n\n"
+    # Here, if discretionary_income_expected is negative, we issue a warning
+    if discretionary_income_expected < 0:
+        debt_check = f"Warning: The amount that can be paid toward debt exceeds the current income of the veteran.\n\n"
+    elif amount_can_be_paid > discretionary_income_expected:
+        debt_check = f"Amount that can be paid toward debt is incorrect: {amount_can_be_paid:.2f}, Maximum affordable amount: {discretionary_income_expected:.2f}\n\n"
+    else:
+        debt_check = "All calculations are correct.\n\n"
+
     write_to_file(RESULTS_PATH, debt_check)
 
+    if amount_can_be_paid > discretionary_income_expected:
+        expected_amount_str = f"Warning: Committing to pay more than the budget. Budget: ${discretionary_income_expected:.2f}, Committed: ${amount_can_be_paid:.2f}"
+    elif discretionary_income_expected < 0:
+        expected_amount_str = 'negative'
+    else:
+        expected_amount_str = f"${discretionary_income_expected:.2f}"
+
+    spouse_str = " and Spouse" if spouse_income > 0 else ""
     calculations = f"""## Calculations\n\n
-    Total Monthly Net Income: ${total_income:.2f}\n\n
+    Veteran{spouse_str} Total Monthly Net Income: ${total_income:.2f}\n\n
     Total Monthly Expenses: ${total_expenses:.2f}\n\n
-    Discretionary Income: ${discretionary_income:.2f}\n\n
-    Expected Amount that can be paid toward debt: {expected_amount:.2f} or negative\n\n
-    Actual Amount that can be paid toward debt: ${'None' if actual_amount is None else format(actual_amount, '.2f')}\n\n"""
+    Discretionary Income (Net Income - Expenses): ${discretionary_income:.2f}\n\n
+    Estimate of expected monthly budget to use towards debt: {expected_amount_str}\n\n
+    Committed monthly payment toward debt: ${'None' if amount_can_be_paid is None else format(amount_can_be_paid, '.2f')}\n\n"""
     write_to_file(RESULTS_PATH, calculations)
 
     markdown_text = f"""# Financial Summary
@@ -112,12 +127,11 @@ def main():
     - Actual Discretionary Income: ${discretionary_income:.2f}
 
     ## Amount that can be paid toward debt
-    - Expected amount: {expected_amount:.2f} or negative
-    """
-    if actual_amount is not None:  # Check if actual_amount is defined
-        markdown_text += f"- Actual amount: ${actual_amount:.2f}\n\n"
+    - Estimated amount: {expected_amount_str}\n\n"""
+    if amount_can_be_paid is not None:  # Check if actual_amount is defined
+        markdown_text += f"- Committed amount: ${amount_can_be_paid:.2f}\n\n"
     else:
-        markdown_text += f"- Actual amount: None\n\n"  # Write None to file
+        markdown_text += "- Committed amount: None\n\n"  # Write None to file
 
     # Write the Markdown text to a file
     with open('./results/summary.md', 'a') as file:

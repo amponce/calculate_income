@@ -1,93 +1,56 @@
-# Financial Summary
-
-## Income
-
-### Veteran
-- Monthly gross salary: $123.00
-- Total deductions: $1.00
-- Net take home pay: $122.00
-- Other income: ${'name': 'Disability Compensation, Education, Social Security, Alimony', 'amount': '3672.20'}
-- Total monthly net income: $3794.20
-
-### Spouse
-- Monthly gross salary: $0.00
-- Total deductions: $0.00
-- Net take home pay: $0.00
-- Other income: ${'name': 'Disability Compensation, Education, Child care income, Alimony payment', 'amount': '3301.32'}
-- Total monthly net income: $3301.32
-
-## Expenses
-- Rent or Mortgage: $1200.53
-- Food: $1000.54
-- Utilities: $662.98
-- Other living expenses: ${'name': 'Clothing, Veteran added', 'amount': '110.00'}
-- Expenses installment contracts and other debts: $12000.64
-- Total monthly expenses: $14974.69
-
-## Discretionary Income
-- Expected Discretionary Income: $-4604.60
-- Actual Discretionary Income: $-7879.17
-
-## Amount that can be paid toward debt
-- Expected amount: -7879.17 or negative
-- Actual amount: None
-
-Discretionary income is incorrect. Expected: -4604.60, Actual: -7879.17
-
-All calculations are correct.
-
-Discretionary income is incorrect. Expected: -4604.60, Actual: -7879.17
+Discretionary income matches the expected results.
 
 All calculations are correct.
 
 ## Calculations
 
 
-    Total Monthly Net Income: $7095.52
+    Veteran and Spouse Total Monthly Net Income: $9590.00
 
 
-    Total Monthly Expenses: $14974.69
+    Total Monthly Expenses: $6312.00
 
 
-    Discretionary Income: $-7879.17
+    Discretionary Income (Net Income - Expenses): $3278.00
 
 
-    Expected Amount that can be paid toward debt: -7879.17 or negative
+    Estimate of expected monthly budget to use towards debt: $3278.00
 
 
-    Actual Amount that can be paid toward debt: $None
+    Committed monthly payment toward debt: $30.51
 
 # Financial Summary
 
     ## Income
 
     ### Veteran
-    - Monthly gross salary: $123.00
-    - Total deductions: $1.00
-    - Net take home pay: $122.00
-    - Other income: ${'name': 'Disability Compensation, Education, Social Security, Alimony', 'amount': '3672.20'}
-    - Total monthly net income: $3794.20
+    - Monthly gross salary: $11000.00
+    - Total deductions: $3110.00
+    - Net take home pay: $7890.00
+    - Other income: ${'name': '', 'amount': '0.00'}
+    - Total monthly net income: $7890.00
 
     ### Spouse
     - Monthly gross salary: $0.00
     - Total deductions: $0.00
     - Net take home pay: $0.00
-    - Other income: ${'name': 'Disability Compensation, Education, Child care income, Alimony payment', 'amount': '3301.32'}
-    - Total monthly net income: $3301.32
+    - Other income: ${'name': 'Disability Compensation, Education, Child support', 'amount': '1700.00'}
+    - Total monthly net income: $1700.00
 
     ## Expenses
-    - Rent or Mortgage: $1200.53
-    - Food: $1000.54
-    - Utilities: $662.98
-    - Other living expenses: ${'name': 'Clothing, Veteran added', 'amount': '110.00'}
-    - Expenses installment contracts and other debts: $12000.64
-    - Total monthly expenses: $14974.69
+    - Rent or Mortgage: $2200.00
+    - Food: $500
+    - Utilities: $490.00
+    - Other living expenses: ${'name': "Clothing, Entertainment, Family and child care, Health expenses, Household maintenance, Pet care, Legal fees, Transportation and car expenses, Renter's or home insurance", 'amount': '1900.00'}
+    - Expenses installment contracts and other debts: $1222.00
+    - Total monthly expenses: $6312.00
 
     ## Discretionary Income
-    - Expected Discretionary Income: $-4604.60
-    - Actual Discretionary Income: $-7879.17
+    - Expected Discretionary Income: $3278.00
+    - Actual Discretionary Income: $3278.00
 
     ## Amount that can be paid toward debt
-    - Expected amount: -7879.17 or negative
-    - Actual amount: None
+    - Estimated amount: $3278.00
+
+- Committed amount: $30.51
 
