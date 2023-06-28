@@ -1,0 +1,1369 @@
+{
+  "metadata": {
+    "version": 0,
+    "returnUrl": "/review-and-submit",
+    "savedAt": 1687908912269,
+    "submission": {
+      "status": false,
+      "errorMessage": false,
+      "id": false,
+      "timestamp": 1687908912257,
+      "hasAttemptedSubmit": true
+    }
+  },
+  "formData": {
+    "questions": {
+      "hasBeenAdjudicatedBankrupt": false,
+      "hasRepayments": true,
+      "hasCreditCardBills": true,
+      "hasRecreationalVehicle": true,
+      "hasVehicle": true,
+      "hasRealEstate": true,
+      "hasDependents": "3",
+      "spouseHasBenefits": true,
+      "isMarried": true,
+      "vetIsEmployed": true,
+      "spouseIsEmployed": true
+    },
+    "additionalData": {
+      "additionalComments": "Statement goes here",
+      "bankruptcy": {}
+    },
+    "assets": {
+      "recVehicleAmount": "30000",
+      "realEstateValue": "300000",
+      "monetaryAssets": [
+        {
+          "name": "Savings accounts",
+          "amount": "5000"
+        },
+        {
+          "name": "Cryptocurrency",
+          "amount": "3000"
+        }
+      ],
+      "automobiles": [
+        {
+          "make": "Toyota",
+          "model": "Tacoma",
+          "year": "2019",
+          "resaleValue": "15000"
+        }
+      ],
+      "otherAssets": [
+        {
+          "name": "Precious metals and coins",
+          "amount": "1000"
+        }
+      ]
+    },
+    "view:components": {
+      "view:recVehicleInfo": {},
+      "view:realEstateAdditionalInfo": {},
+      "view:maritalStatus": {},
+      "view:veteranInfo": {},
+      "view:vaBenefitsOnFile": {},
+      "view:vehicleInfo": {},
+      "view:assetInfo": {}
+    },
+    "benefits": {
+      "spouseBenefits": {
+        "compensationAndPension": "500",
+        "education": "100"
+      }
+    },
+    "personalData": {
+      "spouseFullName": {
+        "first": "Debra ",
+        "last": "Morgan"
+      },
+      "veteranFullName": {
+        "first": "Mark",
+        "last": "Todler",
+        "middle": "",
+        "suffix": "Jr."
+      },
+      "dateOfBirth": "1950-10-04",
+      "address": {
+        "livesOnMilitaryBaseInfo": {},
+        "country": "USA",
+        "street": "123 Faker Street",
+        "city": "Bogusville",
+        "state": "GA",
+        "postalCode": "30058"
+      },
+      "telephoneNumber": "4445551212",
+      "emailAddress": "test2@test1.net",
+      "veteranContactInformation": {
+        "email": "test@user.com",
+        "mobilePhone": {
+          "areaCode": "510",
+          "countryCode": "1",
+          "createdAt": "2020-06-12T16:56:37.000+00:00",
+          "extension": "",
+          "effectiveEndDate": null,
+          "effectiveStartDate": "2020-07-14T19:07:45.000+00:00",
+          "id": 146766,
+          "isInternational": false,
+          "isTextable": null,
+          "isTextPermitted": null,
+          "isTty": null,
+          "isVoicemailable": null,
+          "phoneNumber": "9224444",
+          "phoneType": "HOME",
+          "sourceDate": "2020-07-14T19:07:45.000+00:00",
+          "sourceSystemUser": null,
+          "transactionId": "92c49d39-22b2-4bd6-92b4-0b7e7c63c6a9",
+          "updatedAt": "2020-07-14T19:07:46.000+00:00",
+          "vet360Id": "1273780"
+        },
+        "address": {
+          "addressLine1": "1200 Park Ave",
+          "addressLine2": "c/o Pixar",
+          "addressPou": "CORRESPONDENCE",
+          "addressType": "DOMESTIC",
+          "city": "Emeryville",
+          "countryName": "United States",
+          "countryCodeIso2": "US",
+          "countryCodeIso3": "USA",
+          "countryCodeFips": null,
+          "countyCode": null,
+          "countyName": null,
+          "createdAt": "2020-05-30T03:57:20.000+00:00",
+          "effectiveEndDate": null,
+          "effectiveStartDate": "2020-07-10T20:10:45.000+00:00",
+          "id": 173917,
+          "province": null,
+          "sourceDate": "2020-07-10T20:10:45.000+00:00",
+          "sourceSystemUser": null,
+          "stateCode": "CA",
+          "transactionId": "7139aa82-fd06-45ea-a217-9654869924bd",
+          "updatedAt": "2020-07-10T20:10:46.000+00:00",
+          "validationKey": null,
+          "vet360Id": "1273780",
+          "zipCode": "94608",
+          "zipCodeSuffix": null
+        }
+      },
+      "employmentHistory": {
+        "veteran": {
+          "employmentRecords": [
+            {
+              "type": "Full time",
+              "from": "2022-01-XX",
+              "to": "",
+              "isCurrent": true,
+              "employerName": "Disney Land LLC",
+              "grossMonthlyIncome": "11000",
+              "deductions": [
+                {
+                  "name": "State tax",
+                  "amount": "300"
+                },
+                {
+                  "name": "Federal tax",
+                  "amount": "900"
+                },
+                {
+                  "name": "Health insurance",
+                  "amount": "450"
+                },
+                {
+                  "name": "Garnishment",
+                  "amount": "1100"
+                },
+                {
+                  "name": "Life insurance",
+                  "amount": "60"
+                },
+                {
+                  "name": "Retirement accounts (401k, IRAs, 403b, TSP)",
+                  "amount": "300"
+                }
+              ]
+            }
+          ]
+        },
+        "spouse": {
+          "employmentRecords": [
+            {
+              "type": "Full time",
+              "from": "2022-02-XX",
+              "to": "",
+              "isCurrent": true,
+              "employerName": "Disney World LCC",
+              "grossMonthlyIncome": "13000",
+              "deductions": [
+                {
+                  "name": "State tax",
+                  "amount": "300"
+                },
+                {
+                  "name": "Federal tax",
+                  "amount": "1000"
+                },
+                {
+                  "name": "Health insurance",
+                  "amount": "500"
+                },
+                {
+                  "name": "Life insurance",
+                  "amount": "60"
+                },
+                {
+                  "name": "FICA (Social Security and Medicare)",
+                  "amount": "100"
+                },
+                {
+                  "name": "Retirement accounts (401k, IRAs, 403b, TSP)",
+                  "amount": "300"
+                },
+                {
+                  "name": "Local tax",
+                  "amount": "30"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "dependents": [
+        {
+          "dependentAge": "14"
+        },
+        {
+          "dependentAge": "12"
+        },
+        {
+          "dependentAge": "1"
+        }
+      ]
+    },
+    "personalIdentification": {
+      "ssn": "4437",
+      "fileNumber": "4437"
+    },
+    "selectedDebts": [
+      {
+        "fileNumber": "796121200",
+        "payeeNumber": "00",
+        "personEntitled": "AJHONS",
+        "deductionCode": "30",
+        "benefitType": "Comp & Pen",
+        "diaryCode": "080",
+        "diaryCodeDescription": "Referred to the Department of the Treasury",
+        "amountOverpaid": 0,
+        "amountWithheld": 0,
+        "originalAr": 136.24,
+        "currentAr": 100,
+        "debtHistory": [
+          {
+            "date": "02/25/2009",
+            "letterCode": "914",
+            "description": "Paid In Full - Account balance cleared via offset, not including TOP."
+          },
+          {
+            "date": "02/07/2009",
+            "letterCode": "905",
+            "description": "Administrative Write Off"
+          },
+          {
+            "date": "12/03/2008",
+            "letterCode": "487",
+            "description": "Death Case Pending Action"
+          }
+        ],
+        "id": 0,
+        "debtType": "DEBT"
+      },
+      {
+        "fileNumber": "796121200",
+        "payeeNumber": "00",
+        "personEntitled": "STUB_M",
+        "deductionCode": "44",
+        "benefitType": "CH35 EDU",
+        "diaryCode": "100",
+        "diaryCodeDescription": "Pending payment",
+        "amountOverpaid": 26000,
+        "amountWithheld": 0,
+        "originalAr": 100,
+        "currentAr": 80,
+        "debtHistory": [
+          {
+            "date": "12/19/2014",
+            "letterCode": "681",
+            "description": "Account returned from Treasury Cross Servicing. Account is at TOP.  TOP offsets will be applied to account as Federal funds become available."
+          },
+          {
+            "date": "04/11/2013",
+            "letterCode": "080",
+            "description": "Debt referred to Treasury for Cross servicing"
+          },
+          {
+            "date": "12/11/2012",
+            "letterCode": "510",
+            "description": "Demand letters returned.  Unable to verify address with third party.  Account forced to TOP and/or CS."
+          },
+          {
+            "date": "10/17/2012",
+            "letterCode": "212",
+            "description": "Bad Address - Locator Request Sent"
+          },
+          {
+            "date": "09/28/2012",
+            "letterCode": "117",
+            "description": "Second Demand Letter"
+          },
+          {
+            "date": "09/18/2012",
+            "letterCode": "100",
+            "description": "First Demand Letter - Inactive Benefits - Due Process"
+          }
+        ],
+        "id": 1,
+        "debtType": "DEBT"
+      }
+    ],
+    "selectedDebtsAndCopays": [
+      {
+        "resolutionComment": "10.51",
+        "resolutionOption": "compromise",
+        "id": "f4385298-08a6-42f8-a86f-50e97033fb85",
+        "pSSeqNum": 506,
+        "pSTotSeqNum": 588,
+        "pSFacilityNum": "534",
+        "pSFacPhoneNum": null,
+        "pSTotStatement": 27,
+        "pSStatementVal": "0000018255H",
+        "pSStatementDate": "11152019",
+        "pSStatementDateOutput": "11/15/2019",
+        "pSProcessDate": "11112019",
+        "pSProcessDateOutput": "11/11/2019",
+        "pHPatientLstNme": "JONES",
+        "pHPatientFstNme": "TRAVIS",
+        "pHPatientMidNme": "D",
+        "pHAddress1": "1885 SHORE DR S APT 327",
+        "pHAddress2": null,
+        "pHAddress3": null,
+        "pHCity": "SAVANNAH",
+        "pHState": "FL",
+        "pHZipCde": "314104413",
+        "pHZipCdeOutput": "31410-4413",
+        "pHCtryNme": null,
+        "pHAmtDue": 15,
+        "pHAmtDueOutput": "15.00&nbsp;&nbsp;",
+        "pHPrevBal": 135,
+        "pHPrevBalOutput": "135.00&nbsp;&nbsp;",
+        "pHTotCharges": 15,
+        "pHTotChargesOutput": "15.00&nbsp;&nbsp;",
+        "pHTotCredits": -135,
+        "pHTotCreditsOutput": "135.00-&nbsp;",
+        "pHNewBalance": 15,
+        "pHNewBalanceOutput": "15.00&nbsp;&nbsp;",
+        "pHSpecialNotes": "To pay your statement online, go to www.pay.gov or call 1-888-827-4817.",
+        "pHroParaCdes": "304050556065708085",
+        "pHNumOfLines": 10,
+        "pHDfnNumber": 346310,
+        "pHCernerStatementNumber": 1005154223,
+        "pHCernerPatientId": "1005154223",
+        "pHCernerAccountNumber": "1005154223",
+        "pHIcnNumber": "1012845638V677813",
+        "pHAccountNumber": 0,
+        "pHLargeFontIndcator": 0,
+        "details": [
+          {
+            "pDDatePosted": "10072019",
+            "pDDatePostedOutput": "10/07/2019",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "534-K90HEWN"
+          },
+          {
+            "pDDatePosted": "10072019",
+            "pDDatePostedOutput": "10/07/2019",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "534-K90HEWN"
+          },
+          {
+            "pDDatePosted": "10072019",
+            "pDDatePostedOutput": "10/07/2019",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "534-K90HEWN"
+          },
+          {
+            "pDDatePosted": "10072019",
+            "pDDatePostedOutput": "10/07/2019",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "534-K90HEWN"
+          },
+          {
+            "pDDatePosted": "10072019",
+            "pDDatePostedOutput": "10/07/2019",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "534-K90HEWN"
+          },
+          {
+            "pDDatePosted": "10072019",
+            "pDDatePostedOutput": "10/07/2019",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "534-K90HEWN"
+          },
+          {
+            "pDDatePosted": "10072019",
+            "pDDatePostedOutput": "10/07/2019",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "534-K90HEWN"
+          },
+          {
+            "pDDatePosted": "10072019",
+            "pDDatePostedOutput": "10/07/2019",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "534-K90HEWN"
+          },
+          {
+            "pDDatePosted": "10072019",
+            "pDDatePostedOutput": "10/07/2019",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "534-K90HEWN"
+          },
+          {
+            "pDDatePosted": "10152019",
+            "pDDatePostedOutput": "10/15/2019",
+            "pDTransDesc": "OUTPATIENT CARE(NSC) VISIT DATE: 09/07/2018",
+            "pDTransDescOutput": "OUTPATIENT CARE VISIT DATE: 09/07/2018",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "534-K009FK8"
+          }
+        ],
+        "station": {
+          "facilitYNum": "534",
+          "visNNum": "07",
+          "facilitYDesc": "RALPH H. JOHNSON VA MEDICAL CENTER (534)",
+          "cyclENum": "012",
+          "remiTToFlag": "L",
+          "maiLInsertFlag": "0",
+          "staTAddress1": "ACCOUNTS RECEIVABLE (04AR)",
+          "staTAddress2": "109 BEE ST",
+          "staTAddress3": null,
+          "city": "CHARLESTON",
+          "state": "SC",
+          "ziPCde": "294015703",
+          "ziPCdeOutput": "29401-5703",
+          "baRCde": "*294015703090*",
+          "teLNumFlag": "P",
+          "teLNum": "1-866-258-2772",
+          "teLNum2": null,
+          "contacTInfo": null,
+          "dM2TelNum": null,
+          "contacTInfo2": null,
+          "toPTelNum": null,
+          "lbXFedexAddress1": null,
+          "lbXFedexAddress2": null,
+          "lbXFedexAddress3": null,
+          "lbXFedexCity": null,
+          "lbXFedexState": null,
+          "lbXFedexZipCde": null,
+          "lbXFedexBarCde": null,
+          "lbXFedexContact": null,
+          "lbXFedexContactTelNum": null,
+          "facilityName": "Bob Stump Department of Veterans Affairs Medical Center"
+        },
+        "debtType": "COPAY"
+      },
+      {
+        "resolutionWaiverCheck": true,
+        "resolutionOption": "waiver",
+        "id": "b381cc7b-ea3a-49dc-a982-7146416ed373",
+        "pSSeqNum": 1162,
+        "pSTotSeqNum": 1,
+        "pSFacilityNum": "757",
+        "pSFacPhoneNum": null,
+        "pSTotStatement": 11,
+        "pSStatementVal": "0000040520F",
+        "pSStatementDate": "06052021",
+        "pSStatementDateOutput": "06/05/2021",
+        "pSProcessDate": "06092021",
+        "pSProcessDateOutput": "06/09/2021",
+        "pHPatientLstNme": "JONES",
+        "pHPatientFstNme": "TRAVIS",
+        "pHPatientMidNme": "D",
+        "pHAddress1": "1885 SHORE DR S APT 327",
+        "pHAddress2": null,
+        "pHAddress3": null,
+        "pHCity": "SOUTH PASADENA",
+        "pHState": "FL",
+        "pHZipCde": "337074743",
+        "pHZipCdeOutput": "33707-4743",
+        "pHCtryNme": "US",
+        "pHAmtDue": 46,
+        "pHAmtDueOutput": "46.00&nbsp;&nbsp;",
+        "pHPrevBal": 30,
+        "pHPrevBalOutput": "30.00&nbsp;&nbsp;",
+        "pHTotCharges": 46,
+        "pHTotChargesOutput": "46.00&nbsp;&nbsp;",
+        "pHTotCredits": -30,
+        "pHTotCreditsOutput": "30.00-&nbsp;",
+        "pHNewBalance": 46,
+        "pHNewBalanceOutput": "46.00&nbsp;&nbsp;",
+        "pHSpecialNotes": null,
+        "pHroParaCdes": "254050556065708085",
+        "pHNumOfLines": 7,
+        "pHDfnNumber": 0,
+        "pHCernerStatementNumber": 1005154223,
+        "pHCernerPatientId": "1005154223",
+        "pHCernerAccountNumber": "1005154223",
+        "pHIcnNumber": "1012845638V677813",
+        "pHAccountNumber": 0,
+        "pHLargeFontIndcator": 0,
+        "details": [
+          {
+            "pDDatePosted": "03092020",
+            "pDDatePostedOutput": "03/09/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC) VISIT DATE: 01/14/2020",
+            "pDTransDescOutput": "OUTPATIENT CARE VISIT DATE: 01/14/2020",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00R4FL"
+          },
+          {
+            "pDDatePosted": "03092020",
+            "pDDatePostedOutput": "03/09/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "516-K00R4FL"
+          },
+          {
+            "pDDatePosted": "03242020",
+            "pDDatePostedOutput": "03/24/2020",
+            "pDTransDesc": "COPAY RX:100020337B FD:01/23/2020",
+            "pDTransDescOutput": "COPAY RX#100020337B FILL DATE: 01/23/2020",
+            "pDTransAmt": 5,
+            "pDTransAmtOutput": "5.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00RSNZ"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:LISINOPRIL 5MG TAB  DAYS:30  QTY:30",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:LISINOPRIL 5MG TAB  DAYS:30  QTY:30",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "PHY:SANTOS,LOUISE  CHG:$5.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;PHY:SANTOS,LOUISE  CHG:$5.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "03242020",
+            "pDDatePostedOutput": "03/24/2020",
+            "pDTransDesc": "RX CO-PAYMENT/NSC VET",
+            "pDTransDescOutput": "PAYMENT POSTED ON 03/24/2020",
+            "pDTransAmt": -5,
+            "pDTransAmtOutput": "5.00-&nbsp;",
+            "pDRefNo": "516-K00RSNZ"
+          },
+          {
+            "pDDatePosted": "04032020",
+            "pDDatePostedOutput": "04/03/2020",
+            "pDTransDesc": "COPAY RX:100030241 FD:03/30/2020",
+            "pDTransDescOutput": "COPAY RX#100030241 FILL DATE: 03/30/2020",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00S829"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:ATENOLOL 25MG TAB  DAYS:90  QTY:90",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:ATENOLOL 25MG TAB  DAYS:90  QTY:90",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "PHY:GUTHRIE,BROOKE L  CHG:$15.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;PHY:GUTHRIE,BROOKE L  CHG:$15.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "04272020",
+            "pDDatePostedOutput": "04/27/2020",
+            "pDTransDesc": "COPAY RX:100020336 FD:04/23/2020",
+            "pDTransDescOutput": "COPAY RX#100020336 FILL DATE: 04/23/2020",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00SZBK"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:AMLODIPINE BESYLATE 10MG TAB  DAYS:90",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:AMLODIPINE BESYLATE 10MG TAB  DAYS:90",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "QTY:90  PHY:GUTHRIE,BROOKE L  CHG:$15.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;QTY:90  PHY:GUTHRIE,BROOKE L  CHG:$15.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "04282020",
+            "pDDatePostedOutput": "04/28/2020",
+            "pDTransDesc": "COPAY RX:100011847 FD:04/23/2020",
+            "pDTransDescOutput": "COPAY RX#100011847 FILL DATE: 04/23/2020",
+            "pDTransAmt": 8,
+            "pDTransAmtOutput": "8.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00SZBK"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:MICONAZOLE NITRATE 2% TOP TINCTURE  DAYS:30",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:MICONAZOLE NITRATE 2% TOP TINCTURE  DAYS:30",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "QTY:60  PHY:GUTHRIE,BROOKE L  CHG:$8.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;QTY:60  PHY:GUTHRIE,BROOKE L  CHG:$8.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "05262020",
+            "pDDatePostedOutput": "05/26/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC) VISIT DATE: 04/15/2020",
+            "pDTransDescOutput": "OUTPATIENT CARE VISIT DATE: 04/15/2020",
+            "pDTransAmt": 50,
+            "pDTransAmtOutput": "50.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00TXGK"
+          },
+          {
+            "pDDatePosted": "05262020",
+            "pDDatePostedOutput": "05/26/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -50,
+            "pDTransAmtOutput": "50.00-&nbsp;",
+            "pDRefNo": "516-K00TXGK"
+          },
+          {
+            "pDDatePosted": "06302020",
+            "pDDatePostedOutput": "06/30/2020",
+            "pDTransDesc": "COPAY RX:100030241 FD:06/30/2020",
+            "pDTransDescOutput": "COPAY RX#100030241 FILL DATE: 06/30/2020",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00UY3W"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:ATENOLOL 25MG TAB  DAYS:90  QTY:90",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:ATENOLOL 25MG TAB  DAYS:90  QTY:90",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "PHY:GUTHRIE,BROOKE L  CHG:$15.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;PHY:GUTHRIE,BROOKE L  CHG:$15.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "07092020",
+            "pDDatePostedOutput": "07/09/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC) VISIT DATE: 06/08/2020",
+            "pDTransDescOutput": "OUTPATIENT CARE VISIT DATE: 06/08/2020",
+            "pDTransAmt": 50,
+            "pDTransAmtOutput": "50.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00V8T8"
+          },
+          {
+            "pDDatePosted": "07092020",
+            "pDDatePostedOutput": "07/09/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -50,
+            "pDTransAmtOutput": "50.00-&nbsp;",
+            "pDRefNo": "516-K00V8T8"
+          },
+          {
+            "pDDatePosted": "07092020",
+            "pDDatePostedOutput": "07/09/2020",
+            "pDTransDesc": "COMMENT: K00ULWR PD $50.00 DOS 060820",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;COMMENT: K00ULWR PD $50.00 DOS 060820",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00V8T8"
+          },
+          {
+            "pDDatePosted": "08132020",
+            "pDDatePostedOutput": "08/13/2020",
+            "pDTransDesc": "COPAY RX:100020336 FD:08/11/2020",
+            "pDTransDescOutput": "COPAY RX#100020336 FILL DATE: 08/11/2020",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00WDZQ"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:AMLODIPINE BESYLATE 10MG TAB  DAYS:90",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:AMLODIPINE BESYLATE 10MG TAB  DAYS:90",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "QTY:90  PHY:GUTHRIE,BROOKE L  CHG:$15.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;QTY:90  PHY:GUTHRIE,BROOKE L  CHG:$15.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "09222020",
+            "pDDatePostedOutput": "09/22/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC) VISIT DATE: 08/20/2020",
+            "pDTransDescOutput": "OUTPATIENT CARE VISIT DATE: 08/20/2020",
+            "pDTransAmt": 50,
+            "pDTransAmtOutput": "50.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00XUY2"
+          },
+          {
+            "pDDatePosted": "09222020",
+            "pDDatePostedOutput": "09/22/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -50,
+            "pDTransAmtOutput": "50.00-&nbsp;",
+            "pDRefNo": "516-K00XUY2"
+          },
+          {
+            "pDDatePosted": "09222020",
+            "pDDatePostedOutput": "09/22/2020",
+            "pDTransDesc": "COMMENT: K00X41A PD $50.00 DOS 082020",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;COMMENT: K00X41A PD $50.00 DOS 082020",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": "516-K00XUY2"
+          },
+          {
+            "pDDatePosted": "10072020",
+            "pDDatePostedOutput": "10/07/2020",
+            "pDTransDesc": "COPAY RX:100030241 FD:10/05/2020",
+            "pDTransDescOutput": "COPAY RX#100030241 FILL DATE: 10/05/2020",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K10J56V"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:ATENOLOL 25MG TAB  DAYS:90  QTY:90",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:ATENOLOL 25MG TAB  DAYS:90  QTY:90",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "PHY:GUTHRIE,BROOKE L  CHG:$15.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;PHY:GUTHRIE,BROOKE L  CHG:$15.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "10292020",
+            "pDDatePostedOutput": "10/29/2020",
+            "pDTransDesc": "COPAY RX:100045030 FD:10/27/2020",
+            "pDTransDescOutput": "COPAY RX#100045030 FILL DATE: 10/27/2020",
+            "pDTransAmt": 24,
+            "pDTransAmtOutput": "24.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K10J56V"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:NIACIN (SLO-NIACIN) 250MG TAB,SA  DAYS:90",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:NIACIN (SLO-NIACIN) 250MG TAB,SA  DAYS:90",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "QTY:90  PHY:VELAZQUEZ SANCHEZ,VANESSA",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;QTY:90  PHY:VELAZQUEZ SANCHEZ,VANESSA",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "CHG:$24.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;CHG:$24.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "10292020",
+            "pDDatePostedOutput": "10/29/2020",
+            "pDTransDesc": "COPAY RX:100045028 FD:10/27/2020",
+            "pDTransDescOutput": "COPAY RX#100045028 FILL DATE: 10/27/2020",
+            "pDTransAmt": 8,
+            "pDTransAmtOutput": "8.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K10J56V"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:CARBAMIDE PEROXIDE 6.5% OTIC SOLN  DAYS:14",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:CARBAMIDE PEROXIDE 6.5% OTIC SOLN  DAYS:14",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "QTY:45  PHY:VELAZQUEZ SANCHEZ,VANESSA  CHG:$8.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;QTY:45  PHY:VELAZQUEZ SANCHEZ,VANESSA  CHG:$8.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "10292020",
+            "pDDatePostedOutput": "10/29/2020",
+            "pDTransDesc": "COPAY RX:100045029 FD:10/27/2020",
+            "pDTransDescOutput": "COPAY RX#100045029 FILL DATE: 10/27/2020",
+            "pDTransAmt": 8,
+            "pDTransAmtOutput": "8.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K10J56V"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:MICONAZOLE NITRATE 2% TOP TINCTURE  DAYS:30",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:MICONAZOLE NITRATE 2% TOP TINCTURE  DAYS:30",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "QTY:90  PHY:VELAZQUEZ SANCHEZ,VANESSA  CHG:$8.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;QTY:90  PHY:VELAZQUEZ SANCHEZ,VANESSA  CHG:$8.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "11192020",
+            "pDDatePostedOutput": "11/19/2020",
+            "pDTransDesc": "PAYMENT   (Int:0.12  Adm:1.64)",
+            "pDTransDescOutput": "PAYMENT POSTED ON 11/19/2020",
+            "pDTransAmt": -16.76,
+            "pDTransAmtOutput": "16.76-&nbsp;",
+            "pDRefNo": "516-K00JZPJ"
+          },
+          {
+            "pDDatePosted": "11192020",
+            "pDDatePostedOutput": "11/19/2020",
+            "pDTransDesc": "PAYMENT   (Int:0.26  Adm:0.00)",
+            "pDTransDescOutput": "PAYMENT POSTED ON 11/19/2020",
+            "pDTransAmt": -15.26,
+            "pDTransAmtOutput": "15.26-&nbsp;",
+            "pDRefNo": "516-K00N8XA"
+          },
+          {
+            "pDDatePosted": "11192020",
+            "pDDatePostedOutput": "11/19/2020",
+            "pDTransDesc": "PAYMENT",
+            "pDTransDescOutput": "PAYMENT POSTED ON 11/19/2020",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "516-K00QKJJ"
+          },
+          {
+            "pDDatePosted": "11192020",
+            "pDDatePostedOutput": "11/19/2020",
+            "pDTransDesc": "PAYMENT",
+            "pDTransDescOutput": "PAYMENT POSTED ON 11/19/2020",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "516-K00S829"
+          },
+          {
+            "pDDatePosted": "11192020",
+            "pDDatePostedOutput": "11/19/2020",
+            "pDTransDesc": "PAYMENT",
+            "pDTransDescOutput": "PAYMENT POSTED ON 11/19/2020",
+            "pDTransAmt": -23,
+            "pDTransAmtOutput": "23.00-&nbsp;",
+            "pDRefNo": "516-K00SZBK"
+          },
+          {
+            "pDDatePosted": "11192020",
+            "pDDatePostedOutput": "11/19/2020",
+            "pDTransDesc": "PAYMENT",
+            "pDTransDescOutput": "PAYMENT POSTED ON 11/19/2020",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "516-K00UY3W"
+          },
+          {
+            "pDDatePosted": "11192020",
+            "pDDatePostedOutput": "11/19/2020",
+            "pDTransDesc": "PAYMENT",
+            "pDTransDescOutput": "PAYMENT POSTED ON 11/19/2020",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "516-K00WDZQ"
+          },
+          {
+            "pDDatePosted": "11192020",
+            "pDDatePostedOutput": "11/19/2020",
+            "pDTransDesc": "PAYMENT",
+            "pDTransDescOutput": "PAYMENT POSTED ON 11/19/2020",
+            "pDTransAmt": -55,
+            "pDTransAmtOutput": "55.00-&nbsp;",
+            "pDRefNo": "516-K10J56V"
+          },
+          {
+            "pDDatePosted": "11232020",
+            "pDDatePostedOutput": "11/23/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC) VISIT DATE: 10/27/2020",
+            "pDTransDescOutput": "OUTPATIENT CARE VISIT DATE: 10/27/2020",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K10LD3I"
+          },
+          {
+            "pDDatePosted": "11232020",
+            "pDDatePostedOutput": "11/23/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "516-K10LD3I"
+          },
+          {
+            "pDDatePosted": "11232020",
+            "pDDatePostedOutput": "11/23/2020",
+            "pDTransDesc": "COMMENT: K10KM1P PD $15.00 DOS:10/27/20",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;COMMENT: K10KM1P PD $15.00 DOS:10/27/20",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": "516-K10LD3I"
+          },
+          {
+            "pDDatePosted": "12012020",
+            "pDDatePostedOutput": "12/01/2020",
+            "pDTransDesc": "COPAY RX:100046632 FD:11/18/2020",
+            "pDTransDescOutput": "COPAY RX#100046632 FILL DATE: 11/18/2020",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K10LT59"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:AMLODIPINE BESYLATE 10MG TAB  DAYS:90",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:AMLODIPINE BESYLATE 10MG TAB  DAYS:90",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "QTY:90  PHY:VELAZQUEZ SANCHEZ,VANESSA",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;QTY:90  PHY:VELAZQUEZ SANCHEZ,VANESSA",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "CHG:$15.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;CHG:$15.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "12162020",
+            "pDDatePostedOutput": "12/16/2020",
+            "pDTransDesc": "COPAY RX:100030241A FD:12/12/2020",
+            "pDTransDescOutput": "COPAY RX#100030241A FILL DATE: 12/12/2020",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K10MUDV"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "DRUG:ATENOLOL 25MG TAB  DAYS:90  QTY:90",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;DRUG:ATENOLOL 25MG TAB  DAYS:90  QTY:90",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "PHY:VELAZQUEZ SANCHEZ,VANESSA  CHG:$15.00",
+            "pDTransDescOutput": "&nbsp;&nbsp;&nbsp;PHY:VELAZQUEZ SANCHEZ,VANESSA  CHG:$15.00",
+            "pDTransAmt": 0,
+            "pDTransAmtOutput": ".00&nbsp;&nbsp;",
+            "pDRefNo": null
+          },
+          {
+            "pDDatePosted": "12212020",
+            "pDDatePostedOutput": "12/21/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC) VISIT DATE: 11/13/2020",
+            "pDTransDescOutput": "OUTPATIENT CARE VISIT DATE: 11/13/2020",
+            "pDTransAmt": 15,
+            "pDTransAmtOutput": "15.00&nbsp;&nbsp;",
+            "pDRefNo": "516-K10N4AR"
+          },
+          {
+            "pDDatePosted": "12212020",
+            "pDDatePostedOutput": "12/21/2020",
+            "pDTransDesc": "OUTPATIENT CARE(NSC)",
+            "pDTransDescOutput": "OUTPATIENT CARE",
+            "pDTransAmt": -15,
+            "pDTransAmtOutput": "15.00-&nbsp;",
+            "pDRefNo": "516-K10N4AR"
+          },
+          {
+            "pDDatePosted": null,
+            "pDDatePostedOutput": "",
+            "pDTransDesc": "INTEREST/ADM. CHARGE (Int:0.32 Adm:1.64 Other:0.00",
+            "pDTransDescOutput": "INTEREST/ADM. CHARGE (Int:0.32 Adm:1.64 Other:0.00",
+            "pDTransAmt": 1.96,
+            "pDTransAmtOutput": "1.96&nbsp;&nbsp;",
+            "pDRefNo": null
+          }
+        ],
+        "station": {
+          "facilitYNum": "649",
+          "visNNum": "22",
+          "facilitYDesc": "PRESCOTT VA MEDICAL CENTER (649)",
+          "cyclENum": "016",
+          "remiTToFlag": "L",
+          "maiLInsertFlag": "0",
+          "staTAddress1": "500 N US HIGHWAY 89",
+          "staTAddress2": "AGENT CASHIER (04C)",
+          "staTAddress3": null,
+          "city": "PRESCOTT",
+          "state": "AZ",
+          "ziPCde": "863135001",
+          "ziPCdeOutput": "86313-5001",
+          "baRCde": "*863135001003*",
+          "teLNumFlag": "S",
+          "teLNum": "1-866-802-6819",
+          "teLNum2": null,
+          "contacTInfo": null,
+          "dM2TelNum": null,
+          "contacTInfo2": null,
+          "toPTelNum": null,
+          "lbXFedexAddress1": null,
+          "lbXFedexAddress2": null,
+          "lbXFedexAddress3": null,
+          "lbXFedexCity": null,
+          "lbXFedexState": null,
+          "lbXFedexZipCde": null,
+          "lbXFedexBarCde": null,
+          "lbXFedexContact": null,
+          "lbXFedexContactTelNum": null,
+          "facilityName": "Ralph H. Johnson Department of Veterans Affairs Medical Center"
+        },
+        "debtType": "COPAY",
+        "resolutionComment": ""
+      },
+      {
+        "resolutionWaiverCheck": true,
+        "resolutionOption": "waiver",
+        "fileNumber": "796121200",
+        "payeeNumber": "00",
+        "personEntitled": "AJHONS",
+        "deductionCode": "30",
+        "benefitType": "Comp & Pen",
+        "diaryCode": "080",
+        "diaryCodeDescription": "Referred to the Department of the Treasury",
+        "amountOverpaid": 0,
+        "amountWithheld": 0,
+        "originalAr": 136.24,
+        "currentAr": 100,
+        "debtHistory": [
+          {
+            "date": "02/25/2009",
+            "letterCode": "914",
+            "description": "Paid In Full - Account balance cleared via offset, not including TOP."
+          },
+          {
+            "date": "02/07/2009",
+            "letterCode": "905",
+            "description": "Administrative Write Off"
+          },
+          {
+            "date": "12/03/2008",
+            "letterCode": "487",
+            "description": "Death Case Pending Action"
+          }
+        ],
+        "id": 0,
+        "debtType": "DEBT",
+        "resolutionComment": ""
+      },
+      {
+        "resolutionComment": "20",
+        "resolutionOption": "monthly",
+        "fileNumber": "796121200",
+        "payeeNumber": "00",
+        "personEntitled": "STUB_M",
+        "deductionCode": "44",
+        "benefitType": "CH35 EDU",
+        "diaryCode": "100",
+        "diaryCodeDescription": "Pending payment",
+        "amountOverpaid": 26000,
+        "amountWithheld": 0,
+        "originalAr": 100,
+        "currentAr": 80,
+        "debtHistory": [
+          {
+            "date": "12/19/2014",
+            "letterCode": "681",
+            "description": "Account returned from Treasury Cross Servicing. Account is at TOP.  TOP offsets will be applied to account as Federal funds become available."
+          },
+          {
+            "date": "04/11/2013",
+            "letterCode": "080",
+            "description": "Debt referred to Treasury for Cross servicing"
+          },
+          {
+            "date": "12/11/2012",
+            "letterCode": "510",
+            "description": "Demand letters returned.  Unable to verify address with third party.  Account forced to TOP and/or CS."
+          },
+          {
+            "date": "10/17/2012",
+            "letterCode": "212",
+            "description": "Bad Address - Locator Request Sent"
+          },
+          {
+            "date": "09/28/2012",
+            "letterCode": "117",
+            "description": "Second Demand Letter"
+          },
+          {
+            "date": "09/18/2012",
+            "letterCode": "100",
+            "description": "First Demand Letter - Inactive Benefits - Due Process"
+          }
+        ],
+        "id": 1,
+        "debtType": "DEBT",
+        "resolutionWaiverCheck": false
+      }
+    ],
+    "debt": {
+      "currentAr": 0,
+      "debtHistory": [
+        {
+          "date": ""
+        }
+      ],
+      "deductionCode": "",
+      "originalAr": 0
+    },
+    "socialSecurity": {
+      "spouse": {}
+    },
+    "additionalIncome": {
+      "spouse": {
+        "spAddlIncome": [
+          {
+            "name": "Child support",
+            "amount": "1100"
+          }
+        ]
+      }
+    },
+    "expenses": {
+      "expenseRecords": [
+        {
+          "name": "Rent",
+          "amount": "2200"
+        },
+        {
+          "name": "Renter's or home insurance",
+          "amount": "50"
+        }
+      ],
+      "creditCardBills": [
+        {
+          "purpose": "Credit card payment",
+          "creditorName": "",
+          "originalAmount": "",
+          "unpaidBalance": "15000",
+          "amountDueMonthly": "389",
+          "dateStarted": "",
+          "amountPastDue": "778"
+        }
+      ]
+    },
+    "financialOverview": {},
+    "availableOptions": {},
+    "view:combinedFinancialStatusReport": true,
+    "view:enhancedFinancialStatusReport": true,
+    "income": [
+      {
+        "veteranOrSpouse": "VETERAN"
+      }
+    ],
+    "currEmployment": [
+      {
+        "type": "Full time",
+        "from": "2022-02-XX",
+        "to": "",
+        "isCurrent": true,
+        "employerName": "Disney World LCC"
+      }
+    ],
+    "utilityRecords": [
+      {
+        "name": "Electricity",
+        "amount": "300"
+      },
+      {
+        "name": "Gas",
+        "amount": "100"
+      },
+      {
+        "name": "Water",
+        "amount": "60"
+      },
+      {
+        "name": "Trash",
+        "amount": "30"
+      }
+    ],
+    "installmentContracts": [
+      {
+        "purpose": "Bank Of Evil Corp",
+        "creditorName": "Evil Corp",
+        "originalAmount": "330000",
+        "unpaidBalance": "230000",
+        "amountDueMonthly": "833.00",
+        "dateStarted": "2010-02-XX",
+        "amountPastDue": "833.00"
+      }
+    ],
+    "otherExpenses": [
+      {
+        "name": "Clothing",
+        "amount": "100"
+      },
+      {
+        "name": "Entertainment",
+        "amount": "50"
+      },
+      {
+        "name": "Family and child care",
+        "amount": "600"
+      },
+      {
+        "name": "Food",
+        "amount": "500"
+      },
+      {
+        "name": "Health expenses",
+        "amount": "250"
+      },
+      {
+        "name": "Household maintenance",
+        "amount": "100"
+      },
+      {
+        "name": "Pet care",
+        "amount": "150"
+      },
+      {
+        "name": "Legal fees",
+        "amount": "300"
+      },
+      {
+        "name": "Transportation and car expenses",
+        "amount": "300"
+      }
+    ],
+    "AGREED": true
+  }
+}
