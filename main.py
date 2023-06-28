@@ -2,6 +2,7 @@ import json
 import re
 import sys
 import PyPDF2
+from comparison import compare_data, process_data_pre_submit, process_data_submission_object, generate_report
 
 # Constants
 DATA_PATH = "./data/submission-object.json"
@@ -141,6 +142,19 @@ def main():
     print(markdown_text)
 
     print("All tests passed.")
+
+    # Add these lines here
+    data_pre_submit = load_json_data('./data/pre-submit.json')
+    data_submission_object = load_json_data('./data/submission-object.json')
+
+    processed_data_pre_submit = process_data_pre_submit(data_pre_submit)
+    processed_data_submission_object = process_data_submission_object(
+        data_submission_object)
+
+    discrepancies = compare_data(
+        processed_data_pre_submit, processed_data_submission_object)
+
+    generate_report(discrepancies, './results/comparison_report.md')
 
 
 if __name__ == "__main__":
