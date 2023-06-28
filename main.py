@@ -143,7 +143,6 @@ def main():
 
     print("All tests passed.")
 
-    # Add these lines here
     data_pre_submit = load_json_data('./data/pre-submit.json')
     data_submission_object = load_json_data('./data/submission-object.json')
 
@@ -155,6 +154,8 @@ def main():
         processed_data_pre_submit, processed_data_submission_object)
 
     generate_report(discrepancies, './results/comparison_report.md')
+
+    print("Comparing data from presubmit and submit objects", discrepancies)
 
 
 if __name__ == "__main__":
